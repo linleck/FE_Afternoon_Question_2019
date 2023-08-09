@@ -17,7 +17,7 @@ class DemoApplicationTests {
     @Test
     void 連続移動でゴール達成可能かテストする() {
         PlayMaze playMaze = new PlayMaze();
-        List<Direction> actualHistory = playMaze.getHistory();
+        List<Direction> actualHistory = playMaze.play();
         List<Direction> expectedHistory = new ArrayList<>(Arrays.asList(SOUTH, EAST, EAST, EAST, EAST, SOUTH, SOUTH, WEST, WEST, WEST, WEST));
         assertEquals(expectedHistory, actualHistory);
 
