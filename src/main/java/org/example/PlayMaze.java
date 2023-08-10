@@ -5,9 +5,6 @@ import java.util.List;
 
 public class PlayMaze {
 
-    public PlayMaze() {
-    }
-
     public List<Direction> play() {
         Maze maze = new Maze("*******" + "*..*..*" + "*S**.**" + "*.....*" + "*****.*" + "*G....*" + "*******", 7);
         Piece piece = new Piece(maze);
